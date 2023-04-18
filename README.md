@@ -1,3 +1,3 @@
 # codewarsKatas
 
-I upload my daily codewars kata in this repo
+I upload my daily codewars challenge in this repo
