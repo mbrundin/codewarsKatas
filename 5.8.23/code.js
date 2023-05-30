@@ -1,19 +1,6 @@
-function getSum(a, b)
-{
-  let result = 0;
-  if(a===b){
-    return a
-    
-  } else if(a>b){
-    for(let i=b;i<=a;i++){
-       result+=i
-    }
-    return result
-    
-  }else if(a<b){
-    for(let i=a;i<=b;i++){
-      result+=i
-    }
-    return result
-  }
+function comp(array1, array2) {
+  if (array1 == null || array2 == null) return false;
+  array1.sort((a, b) => a - b);
+  array2.sort((a, b) => a - b);
+  return array1.every((item, index) => item * item == array2[index]);
 }
